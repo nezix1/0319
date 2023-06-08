@@ -295,8 +295,8 @@ form button {
   top: 0;
   right: 0;
   background: #E9E5DC;
-  border-bottom: 2px solid #000000;
-  padding: 23px 0 20px;
+  border-bottom: 0.125rem solid #000000;
+  padding: 1.4375rem 0 1.25rem;
   z-index: 5;
 }
 
@@ -551,14 +551,6 @@ form button {
     gap: 7.5rem;
   }
 
-  .intro__text {
-    margin-top: 2.5rem;
-  }
-
-  .intro__text {
-    margin-bottom: 2.5rem;
-  }
-
   .services__item {
     margin-bottom: 6.25rem;
   }
@@ -648,6 +640,14 @@ form button {
   }
 
   .intro__text {
+    margin-top: 2.5rem;
+  }
+
+  .intro__text {
+    margin-bottom: 2.5rem;
+  }
+
+  .intro__text {
     font-size: 2.1875rem;
   }
 
@@ -718,15 +718,7 @@ form button {
   }
 
   .menu__list {
-    gap: 3.75rem;
-  }
-
-  .intro__text {
-    margin-top: 1.875rem;
-  }
-
-  .intro__text {
-    margin-bottom: 1.875rem;
+    gap: 1.875rem;
   }
 
   .services__item {
@@ -760,12 +752,8 @@ form button {
     margin-bottom: 1.25rem;
   }
 
-  h3 {
-    font-size: 1.625rem;
-  }
-
-  ul li {
-    font-size: 1.5rem;
+  .header__logo {
+    width: 4.375rem;
   }
 
   .menu {
@@ -781,6 +769,10 @@ form button {
             flex-direction: column;
   }
 
+  .menu__link {
+    font-size: 1.5rem;
+  }
+
   .menu__body {
     position: absolute;
     top: -50vh;
@@ -790,7 +782,7 @@ form button {
     transition: top 0.5s ease;
     width: calc(100% + 6.25rem);
     background: #E9E5DC;
-    border-bottom: 2px solid #000000;
+    border-bottom: 0.125rem solid #000000;
   }
 
   .menu-open .menu__body {
@@ -798,6 +790,10 @@ form button {
     position: absolute;
     top: 5rem;
     padding: 1.25rem;
+  }
+
+  .menu__icon-wrapper {
+    top: calc(100% + 3.125rem);
   }
 
   .icon-menu {
@@ -864,27 +860,23 @@ form button {
   .footer__social {
     gap: 0.6875rem;
   }
-
-  .intro__text {
-    font-size: 1.5rem;
-  }
-
-  .services__item p {
-    font-size: 1.75rem;
-  }
-
-  .services__show-more {
-    font-size: 1.5rem;
-  }
 }
 
 @media (max-width: 47.99875em) and (max-width: 20em) {
   h2 {
-    font-size: 1.625rem;
+    font-size: 1.5rem;
   }
 
   h2 span {
-    font-size: 1.125rem;
+    font-size: 1rem;
+  }
+
+  h3 {
+    font-size: 1.25rem;
+  }
+
+  ul li {
+    font-size: 1rem;
   }
 
   input,
@@ -894,7 +886,7 @@ form button {
 
   input,
   textarea {
-    font-size: 1.125rem;
+    font-size: 1rem;
   }
 
   form button {
@@ -914,7 +906,7 @@ form button {
   }
 
   form button {
-    font-size: 1.25rem;
+    font-size: 1.125rem;
   }
 
   .footer {
@@ -943,6 +935,22 @@ form button {
 
   .footer__form {
     margin-bottom: 1.25rem;
+  }
+
+  .intro__text {
+    margin-top: 0.9375rem;
+  }
+
+  .intro__text {
+    margin-bottom: 0.9375rem;
+  }
+
+  .intro__text {
+    font-size: 1.125rem;
+  }
+
+  .services__item p {
+    font-size: 1.125rem;
   }
 
   .services__item .services__decor {
@@ -984,11 +992,43 @@ form button {
   .services__item.active .services__decor-big {
     right: -0.75rem;
   }
+
+  .services__show-more {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 47.99875em) and (max-width: 47.99875em) {
+  .menu-open .menu__body {
+    top: 4.0625rem;
+  }
+}
+
+@media (max-width: 47.99875em) and (max-width: 29.99875em) {
+  .menu-open .menu__body {
+    top: 2.5rem;
+  }
 }
 
 @media (max-width: 29.99875em) {
   [class*=__container] {
     padding: 0 1.25rem;
+  }
+
+  ._section-logo {
+    left: 1.25rem;
+  }
+
+  .header {
+    padding: 0.8125rem 0 0.625rem;
+  }
+
+  .header__logo {
+    width: 3.125rem;
+  }
+
+  .menu__icon-wrapper {
+    top: calc(100% + 1.875rem);
   }
 }
 
@@ -1244,6 +1284,30 @@ form button {
     }
 }
 
+@supports (margin-top: clamp( 1.875rem , 1.1607142857rem  +  1.4880952381vw , 2.5rem )) {
+    .intro__text {
+      margin-top: clamp( 1.875rem , 1.1607142857rem  +  1.4880952381vw , 2.5rem );
+    }
+}
+
+@supports not (margin-top: clamp( 1.875rem , 1.1607142857rem  +  1.4880952381vw , 2.5rem )) {
+    .intro__text {
+      margin-top: calc(1.875rem + 0.625 * (100vw - 48rem) / 42);
+    }
+}
+
+@supports (margin-bottom: clamp( 1.875rem , 1.1607142857rem  +  1.4880952381vw , 2.5rem )) {
+    .intro__text {
+      margin-bottom: clamp( 1.875rem , 1.1607142857rem  +  1.4880952381vw , 2.5rem );
+    }
+}
+
+@supports not (margin-bottom: clamp( 1.875rem , 1.1607142857rem  +  1.4880952381vw , 2.5rem )) {
+    .intro__text {
+      margin-bottom: calc(1.875rem + 0.625 * (100vw - 48rem) / 42);
+    }
+}
+
 @supports (font-size: clamp( 1.75rem , 1.25rem  +  1.0416666667vw , 2.1875rem )) {
     .intro__text {
       font-size: clamp( 1.75rem , 1.25rem  +  1.0416666667vw , 2.1875rem );
@@ -1410,6 +1474,14 @@ form button {
     font-size: 1.625rem;
   }
 
+  h3 {
+    font-size: 1.625rem;
+  }
+
+  ul li {
+    font-size: 1.5rem;
+  }
+
   input,
   textarea {
     padding: 0.75rem;
@@ -1468,6 +1540,22 @@ form button {
     margin-bottom: 1.875rem;
   }
 
+  .intro__text {
+    margin-top: 1.875rem;
+  }
+
+  .intro__text {
+    margin-bottom: 1.875rem;
+  }
+
+  .intro__text {
+    font-size: 1.625rem;
+  }
+
+  .services__item p {
+    font-size: 1.75rem;
+  }
+
   .services__item .services__decor {
     top: -3.125rem;
   }
@@ -1507,30 +1595,58 @@ form button {
   .services__item.active .services__decor-big {
     right: 1.1875rem;
   }
+
+  .services__show-more {
+    font-size: 1.5rem;
+  }
 }
 
 @media (max-width: 47.99875em) and (min-width: 20em) and (max-width: 94.0625em) {
-@supports (font-size: clamp( 1.625rem , 1.5237341772rem  +  0.5063291139vw , 2rem )) {
+@supports (font-size: clamp( 1.5rem , 1.364978903rem  +  0.6751054852vw , 2rem )) {
     h2 {
-      font-size: clamp( 1.625rem , 1.5237341772rem  +  0.5063291139vw , 2rem );
+      font-size: clamp( 1.5rem , 1.364978903rem  +  0.6751054852vw , 2rem );
     }
 }
 
-@supports not (font-size: clamp( 1.625rem , 1.5237341772rem  +  0.5063291139vw , 2rem )) {
+@supports not (font-size: clamp( 1.5rem , 1.364978903rem  +  0.6751054852vw , 2rem )) {
     h2 {
-      font-size: calc(1.625rem + 0.375 * (100vw - 20rem) / 74.0625);
+      font-size: calc(1.5rem + 0.5 * (100vw - 20rem) / 74.0625);
     }
 }
 
-@supports (font-size: clamp( 1.125rem , 0.989978903rem  +  0.6751054852vw , 1.625rem )) {
+@supports (font-size: clamp( 1rem , 0.8312236287rem  +  0.8438818565vw , 1.625rem )) {
     h2 span {
-      font-size: clamp( 1.125rem , 0.989978903rem  +  0.6751054852vw , 1.625rem );
+      font-size: clamp( 1rem , 0.8312236287rem  +  0.8438818565vw , 1.625rem );
     }
 }
 
-@supports not (font-size: clamp( 1.125rem , 0.989978903rem  +  0.6751054852vw , 1.625rem )) {
+@supports not (font-size: clamp( 1rem , 0.8312236287rem  +  0.8438818565vw , 1.625rem )) {
     h2 span {
-      font-size: calc(1.125rem + 0.5 * (100vw - 20rem) / 74.0625);
+      font-size: calc(1rem + 0.625 * (100vw - 20rem) / 74.0625);
+    }
+}
+
+@supports (font-size: clamp( 1.25rem , 1.1487341772rem  +  0.5063291139vw , 1.625rem )) {
+    h3 {
+      font-size: clamp( 1.25rem , 1.1487341772rem  +  0.5063291139vw , 1.625rem );
+    }
+}
+
+@supports not (font-size: clamp( 1.25rem , 1.1487341772rem  +  0.5063291139vw , 1.625rem )) {
+    h3 {
+      font-size: calc(1.25rem + 0.375 * (100vw - 20rem) / 74.0625);
+    }
+}
+
+@supports (font-size: clamp( 1rem , 0.864978903rem  +  0.6751054852vw , 1.5rem )) {
+    ul li {
+      font-size: clamp( 1rem , 0.864978903rem  +  0.6751054852vw , 1.5rem );
+    }
+}
+
+@supports not (font-size: clamp( 1rem , 0.864978903rem  +  0.6751054852vw , 1.5rem )) {
+    ul li {
+      font-size: calc(1rem + 0.5 * (100vw - 20rem) / 74.0625);
     }
 }
 
@@ -1548,17 +1664,17 @@ form button {
     }
 }
 
-@supports (font-size: clamp( 1.125rem , 1.0912447257rem  +  0.1687763713vw , 1.25rem )) {
+@supports (font-size: clamp( 1rem , 0.9324894515rem  +  0.3375527426vw , 1.25rem )) {
     input,
     textarea {
-      font-size: clamp( 1.125rem , 1.0912447257rem  +  0.1687763713vw , 1.25rem );
+      font-size: clamp( 1rem , 0.9324894515rem  +  0.3375527426vw , 1.25rem );
     }
 }
 
-@supports not (font-size: clamp( 1.125rem , 1.0912447257rem  +  0.1687763713vw , 1.25rem )) {
+@supports not (font-size: clamp( 1rem , 0.9324894515rem  +  0.3375527426vw , 1.25rem )) {
     input,
     textarea {
-      font-size: calc(1.125rem + 0.125 * (100vw - 20rem) / 74.0625);
+      font-size: calc(1rem + 0.25 * (100vw - 20rem) / 74.0625);
     }
 }
 
@@ -1610,15 +1726,15 @@ form button {
     }
 }
 
-@supports (font-size: clamp( 1.25rem , 1.1824894515rem  +  0.3375527426vw , 1.5rem )) {
+@supports (font-size: clamp( 1.125rem , 1.0237341772rem  +  0.5063291139vw , 1.5rem )) {
     form button {
-      font-size: clamp( 1.25rem , 1.1824894515rem  +  0.3375527426vw , 1.5rem );
+      font-size: clamp( 1.125rem , 1.0237341772rem  +  0.5063291139vw , 1.5rem );
     }
 }
 
-@supports not (font-size: clamp( 1.25rem , 1.1824894515rem  +  0.3375527426vw , 1.5rem )) {
+@supports not (font-size: clamp( 1.125rem , 1.0237341772rem  +  0.5063291139vw , 1.5rem )) {
     form button {
-      font-size: calc(1.25rem + 0.25 * (100vw - 20rem) / 74.0625);
+      font-size: calc(1.125rem + 0.375 * (100vw - 20rem) / 74.0625);
     }
 }
 
@@ -1703,6 +1819,54 @@ form button {
 @supports not (margin-bottom: clamp( 1.25rem , 1.0812236287rem  +  0.8438818565vw , 1.875rem )) {
     .footer__form {
       margin-bottom: calc(1.25rem + 0.625 * (100vw - 20rem) / 74.0625);
+    }
+}
+
+@supports (margin-top: clamp( 0.9375rem , 0.684335443rem  +  1.2658227848vw , 1.875rem )) {
+    .intro__text {
+      margin-top: clamp( 0.9375rem , 0.684335443rem  +  1.2658227848vw , 1.875rem );
+    }
+}
+
+@supports not (margin-top: clamp( 0.9375rem , 0.684335443rem  +  1.2658227848vw , 1.875rem )) {
+    .intro__text {
+      margin-top: calc(0.9375rem + 0.9375 * (100vw - 20rem) / 74.0625);
+    }
+}
+
+@supports (margin-bottom: clamp( 0.9375rem , 0.684335443rem  +  1.2658227848vw , 1.875rem )) {
+    .intro__text {
+      margin-bottom: clamp( 0.9375rem , 0.684335443rem  +  1.2658227848vw , 1.875rem );
+    }
+}
+
+@supports not (margin-bottom: clamp( 0.9375rem , 0.684335443rem  +  1.2658227848vw , 1.875rem )) {
+    .intro__text {
+      margin-bottom: calc(0.9375rem + 0.9375 * (100vw - 20rem) / 74.0625);
+    }
+}
+
+@supports (font-size: clamp( 1.125rem , 0.989978903rem  +  0.6751054852vw , 1.625rem )) {
+    .intro__text {
+      font-size: clamp( 1.125rem , 0.989978903rem  +  0.6751054852vw , 1.625rem );
+    }
+}
+
+@supports not (font-size: clamp( 1.125rem , 0.989978903rem  +  0.6751054852vw , 1.625rem )) {
+    .intro__text {
+      font-size: calc(1.125rem + 0.5 * (100vw - 20rem) / 74.0625);
+    }
+}
+
+@supports (font-size: clamp( 1.125rem , 0.9562236287rem  +  0.8438818565vw , 1.75rem )) {
+    .services__item p {
+      font-size: clamp( 1.125rem , 0.9562236287rem  +  0.8438818565vw , 1.75rem );
+    }
+}
+
+@supports not (font-size: clamp( 1.125rem , 0.9562236287rem  +  0.8438818565vw , 1.75rem )) {
+    .services__item p {
+      font-size: calc(1.125rem + 0.625 * (100vw - 20rem) / 74.0625);
     }
 }
 
@@ -1825,6 +1989,18 @@ form button {
       right: calc(-0.75rem + 1.9375 * (100vw - 20rem) / 74.0625);
     }
 }
+
+@supports (font-size: clamp( 1rem , 0.864978903rem  +  0.6751054852vw , 1.5rem )) {
+    .services__show-more {
+      font-size: clamp( 1rem , 0.864978903rem  +  0.6751054852vw , 1.5rem );
+    }
+}
+
+@supports not (font-size: clamp( 1rem , 0.864978903rem  +  0.6751054852vw , 1.5rem )) {
+    .services__show-more {
+      font-size: calc(1rem + 0.5 * (100vw - 20rem) / 74.0625);
+    }
+}
 }
 
 @media (min-width: 20em) and (max-width: 94.0625em) {
@@ -1876,39 +2052,15 @@ form button {
     }
 }
 
-@supports (gap: clamp( 3.75rem , 2.7373417722rem  +  5.0632911392vw , 7.5rem )) {
+@supports (gap: clamp( 1.875rem , 0.3560126582rem  +  7.5949367089vw , 7.5rem )) {
     .menu__list {
-      gap: clamp( 3.75rem , 2.7373417722rem  +  5.0632911392vw , 7.5rem );
+      gap: clamp( 1.875rem , 0.3560126582rem  +  7.5949367089vw , 7.5rem );
     }
 }
 
-@supports not (gap: clamp( 3.75rem , 2.7373417722rem  +  5.0632911392vw , 7.5rem )) {
+@supports not (gap: clamp( 1.875rem , 0.3560126582rem  +  7.5949367089vw , 7.5rem )) {
     .menu__list {
-      gap: calc(3.75rem + 3.75 * (100vw - 20rem) / 74.0625);
-    }
-}
-
-@supports (margin-top: clamp( 1.875rem , 1.7062236287rem  +  0.8438818565vw , 2.5rem )) {
-    .intro__text {
-      margin-top: clamp( 1.875rem , 1.7062236287rem  +  0.8438818565vw , 2.5rem );
-    }
-}
-
-@supports not (margin-top: clamp( 1.875rem , 1.7062236287rem  +  0.8438818565vw , 2.5rem )) {
-    .intro__text {
-      margin-top: calc(1.875rem + 0.625 * (100vw - 20rem) / 74.0625);
-    }
-}
-
-@supports (margin-bottom: clamp( 1.875rem , 1.7062236287rem  +  0.8438818565vw , 2.5rem )) {
-    .intro__text {
-      margin-bottom: clamp( 1.875rem , 1.7062236287rem  +  0.8438818565vw , 2.5rem );
-    }
-}
-
-@supports not (margin-bottom: clamp( 1.875rem , 1.7062236287rem  +  0.8438818565vw , 2.5rem )) {
-    .intro__text {
-      margin-bottom: calc(1.875rem + 0.625 * (100vw - 20rem) / 74.0625);
+      gap: calc(1.875rem + 5.625 * (100vw - 20rem) / 74.0625);
     }
 }
 
@@ -1940,15 +2092,15 @@ form button {
 }
 
 @media (max-width: 47.99875em) and (min-width: 20em) and (max-width: 48em) {
-@supports (font-size: clamp( 7.1875rem , 1.1607142857rem  +  30.1339285714vw , 15.625rem )) {
+@supports (font-size: clamp( 6.875rem , 0.625rem  +  31.25vw , 15.625rem )) {
     .intro__left h1 {
-      font-size: clamp( 7.1875rem , 1.1607142857rem  +  30.1339285714vw , 15.625rem );
+      font-size: clamp( 6.875rem , 0.625rem  +  31.25vw , 15.625rem );
     }
 }
 
-@supports not (font-size: clamp( 7.1875rem , 1.1607142857rem  +  30.1339285714vw , 15.625rem )) {
+@supports not (font-size: clamp( 6.875rem , 0.625rem  +  31.25vw , 15.625rem )) {
     .intro__left h1 {
-      font-size: calc(7.1875rem + 8.4375 * (100vw - 20rem) / 28);
+      font-size: calc(6.875rem + 8.75 * (100vw - 20rem) / 28);
     }
 }
 }
