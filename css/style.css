@@ -296,8 +296,12 @@ form button {
   right: 0;
   background: #E9E5DC;
   border-bottom: 0.125rem solid #000000;
-  padding: 1.4375rem 0 1.25rem;
+  padding: 0.9375rem 0 0.9375rem;
   z-index: 5;
+}
+
+.header__logo {
+  width: 4.375rem;
 }
 
 .menu {
@@ -324,6 +328,10 @@ form button {
           align-items: center;
 }
 
+.menu__item {
+  font-size: 1.5rem;
+}
+
 .menu__link {
   font-family: "Akrobat";
   font-weight: 500;
@@ -331,6 +339,7 @@ form button {
   line-height: 81%;
   text-transform: uppercase;
   color: #000000;
+  font-size: 1.5rem;
 }
 
 .menu__overlay {
@@ -448,7 +457,7 @@ form button {
 
 .intro__right {
   min-width: 26.875rem;
-  padding-top: 5.9375rem;
+  padding-top: 5rem;
   max-width: 38.875rem;
   width: 100%;
 }
@@ -460,8 +469,7 @@ form button {
 .intro__slogan {
   padding: 2.8125rem 3.125rem 0 2.8125rem;
   font-weight: 400;
-  font-size: 2.8125rem;
-  line-height: 3.375rem;
+  line-height: 1.2;
   text-align: justify;
   text-transform: uppercase;
 }
@@ -520,19 +528,33 @@ form button {
   transition: all 0.4s ease;
 }
 
+.services__item .services__decor {
+  top: -3.75rem;
+}
+
 .services__show-more {
   margin-top: 0.625rem;
 }
 
-@media (min-width: 90.5625em) {
-  form button {
+@media (min-width: 94.0625em) {
+  h2 {
     font-size: 2.25rem;
   }
-}
 
-@media (min-width: 94.0625em) {
+  h2 {
+    margin-bottom: 1.875rem;
+  }
+
+  h2 span {
+    font-size: 1.875rem;
+  }
+
+  h3 {
+    font-size: 1.625rem;
+  }
+
   ._section-header {
-    margin-bottom: 6.875rem;
+    margin-bottom: 6.25rem;
   }
 
   ._section-header h3 {
@@ -544,37 +566,11 @@ form button {
   }
 
   ._section-logo {
-    height: 9.375rem;
-  }
-
-  .menu__list {
-    gap: 7.5rem;
-  }
-
-  .services__item {
-    margin-bottom: 6.25rem;
-  }
-}
-
-@media (min-width: 90em) {
-  h2 {
-    font-size: 4rem;
-  }
-
-  h2 {
-    margin-bottom: 3.75rem;
-  }
-
-  h2 span {
-    font-size: 4rem;
-  }
-
-  h3 {
-    font-size: 2.5rem;
+    height: 8.125rem;
   }
 
   ul li {
-    font-size: 3rem;
+    font-size: 1.5rem;
   }
 
   input,
@@ -584,7 +580,7 @@ form button {
 
   input,
   textarea {
-    font-size: 2.25rem;
+    font-size: 1.5rem;
   }
 
   form button {
@@ -603,6 +599,36 @@ form button {
     padding-right: 8.9375rem;
   }
 
+  form button {
+    font-size: 1.5rem;
+  }
+
+  .menu__list {
+    gap: 7.5rem;
+  }
+
+  .intro__slogan {
+    font-size: 2.8125rem;
+  }
+
+  .intro__text {
+    font-size: 1.625rem;
+  }
+
+  .services__item {
+    margin-bottom: 3.75rem;
+  }
+
+  .services__item p {
+    font-size: 1.75rem;
+  }
+
+  .services__show-more {
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 90em) {
   .footer {
     padding-top: 8.25rem;
   }
@@ -647,18 +673,6 @@ form button {
     margin-bottom: 2.5rem;
   }
 
-  .intro__text {
-    font-size: 2.1875rem;
-  }
-
-  .services__item p {
-    font-size: 3rem;
-  }
-
-  .services__item .services__decor {
-    top: 0.625rem;
-  }
-
   .services__item .services__decor {
     right: 1.9375rem;
   }
@@ -668,7 +682,7 @@ form button {
   }
 
   .services__item .services__decor-big {
-    top: 8.75rem;
+    top: 3.125rem;
   }
 
   .services__item .services__decor-big {
@@ -680,7 +694,7 @@ form button {
   }
 
   .services__item.active .services__decor {
-    top: 15.8125rem;
+    top: 6.25rem;
   }
 
   .services__item.active .services__decor {
@@ -688,19 +702,31 @@ form button {
   }
 
   .services__item.active .services__decor-big {
-    top: 24.75rem;
+    top: 12.5rem;
   }
 
   .services__item.active .services__decor-big {
     right: 11.1875rem;
   }
-
-  .services__show-more {
-    font-size: 3rem;
-  }
 }
 
 @media (max-width: 20em) {
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  h2 {
+    margin-bottom: 1.25rem;
+  }
+
+  h2 span {
+    font-size: 1rem;
+  }
+
+  h3 {
+    font-size: 1.25rem;
+  }
+
   ._section-header {
     margin-bottom: 2.5rem;
   }
@@ -717,12 +743,62 @@ form button {
     height: 4.0625rem;
   }
 
+  ul li {
+    font-size: 1rem;
+  }
+
+  input,
+  textarea {
+    padding: 0.625rem;
+  }
+
+  input,
+  textarea {
+    font-size: 1rem;
+  }
+
+  form button {
+    padding-top: 0.5rem;
+  }
+
+  form button {
+    padding-bottom: 0.5rem;
+  }
+
+  form button {
+    padding-left: 0.75rem;
+  }
+
+  form button {
+    padding-right: 3.125rem;
+  }
+
+  form button {
+    font-size: 1.125rem;
+  }
+
   .menu__list {
     gap: 1.875rem;
   }
 
+  .intro__slogan {
+    font-size: 1.875rem;
+  }
+
+  .intro__text {
+    font-size: 1.125rem;
+  }
+
   .services__item {
-    margin-bottom: 2.5rem;
+    margin-bottom: 1.875rem;
+  }
+
+  .services__item p {
+    font-size: 1.125rem;
+  }
+
+  .services__show-more {
+    font-size: 1rem;
   }
 }
 
@@ -734,6 +810,12 @@ form button {
             transform: translateX(-50%);
   }
 
+  .intro__left {
+    min-width: 37.5rem;
+  }
+}
+
+@media (max-width: 61.99875em) {
   .intro__left {
     min-width: 0;
   }
@@ -748,12 +830,8 @@ form button {
     padding: 0 2.5rem;
   }
 
-  h2 {
-    margin-bottom: 1.25rem;
-  }
-
-  .header__logo {
-    width: 4.375rem;
+  .header {
+    padding: 0.8125rem 0 0.625rem;
   }
 
   .menu {
@@ -767,10 +845,6 @@ form button {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-  }
-
-  .menu__link {
-    font-size: 1.5rem;
   }
 
   .menu__body {
@@ -862,53 +936,19 @@ form button {
   }
 }
 
+@media (max-width: 47.99875em) and (max-width: 47.99875em) {
+  .menu-open .menu__body {
+    top: 4.0625rem;
+  }
+}
+
+@media (max-width: 47.99875em) and (max-width: 29.99875em) {
+  .menu-open .menu__body {
+    top: 2.5rem;
+  }
+}
+
 @media (max-width: 47.99875em) and (max-width: 20em) {
-  h2 {
-    font-size: 1.5rem;
-  }
-
-  h2 span {
-    font-size: 1rem;
-  }
-
-  h3 {
-    font-size: 1.25rem;
-  }
-
-  ul li {
-    font-size: 1rem;
-  }
-
-  input,
-  textarea {
-    padding: 0.625rem;
-  }
-
-  input,
-  textarea {
-    font-size: 1rem;
-  }
-
-  form button {
-    padding-top: 0.5rem;
-  }
-
-  form button {
-    padding-bottom: 0.5rem;
-  }
-
-  form button {
-    padding-left: 0.75rem;
-  }
-
-  form button {
-    padding-right: 3.125rem;
-  }
-
-  form button {
-    font-size: 1.125rem;
-  }
-
   .footer {
     padding-top: 1.5625rem;
   }
@@ -943,14 +983,6 @@ form button {
 
   .intro__text {
     margin-bottom: 0.9375rem;
-  }
-
-  .intro__text {
-    font-size: 1.125rem;
-  }
-
-  .services__item p {
-    font-size: 1.125rem;
   }
 
   .services__item .services__decor {
@@ -992,22 +1024,6 @@ form button {
   .services__item.active .services__decor-big {
     right: -0.75rem;
   }
-
-  .services__show-more {
-    font-size: 1rem;
-  }
-}
-
-@media (max-width: 47.99875em) and (max-width: 47.99875em) {
-  .menu-open .menu__body {
-    top: 4.0625rem;
-  }
-}
-
-@media (max-width: 47.99875em) and (max-width: 29.99875em) {
-  .menu-open .menu__body {
-    top: 2.5rem;
-  }
 }
 
 @media (max-width: 29.99875em) {
@@ -1017,10 +1033,6 @@ form button {
 
   ._section-logo {
     left: 1.25rem;
-  }
-
-  .header {
-    padding: 0.8125rem 0 0.625rem;
   }
 
   .header__logo {
@@ -1039,143 +1051,277 @@ form button {
   }
 }
 
+@media (min-width: 20em) and (max-width: 94.0625em) {
+@supports (font-size: clamp( 1.5rem , 1.2974683544rem  +  1.0126582278vw , 2.25rem )) {
+    h2 {
+      font-size: clamp( 1.5rem , 1.2974683544rem  +  1.0126582278vw , 2.25rem );
+    }
+}
+
+@supports not (font-size: clamp( 1.5rem , 1.2974683544rem  +  1.0126582278vw , 2.25rem )) {
+    h2 {
+      font-size: calc(1.5rem + 0.75 * (100vw - 20rem) / 74.0625);
+    }
+}
+
+@supports (margin-bottom: clamp( 1.25rem , 1.0812236287rem  +  0.8438818565vw , 1.875rem )) {
+    h2 {
+      margin-bottom: clamp( 1.25rem , 1.0812236287rem  +  0.8438818565vw , 1.875rem );
+    }
+}
+
+@supports not (margin-bottom: clamp( 1.25rem , 1.0812236287rem  +  0.8438818565vw , 1.875rem )) {
+    h2 {
+      margin-bottom: calc(1.25rem + 0.625 * (100vw - 20rem) / 74.0625);
+    }
+}
+
+@supports (font-size: clamp( 1rem , 0.7637130802rem  +  1.1814345992vw , 1.875rem )) {
+    h2 span {
+      font-size: clamp( 1rem , 0.7637130802rem  +  1.1814345992vw , 1.875rem );
+    }
+}
+
+@supports not (font-size: clamp( 1rem , 0.7637130802rem  +  1.1814345992vw , 1.875rem )) {
+    h2 span {
+      font-size: calc(1rem + 0.875 * (100vw - 20rem) / 74.0625);
+    }
+}
+
+@supports (font-size: clamp( 1.25rem , 1.1487341772rem  +  0.5063291139vw , 1.625rem )) {
+    h3 {
+      font-size: clamp( 1.25rem , 1.1487341772rem  +  0.5063291139vw , 1.625rem );
+    }
+}
+
+@supports not (font-size: clamp( 1.25rem , 1.1487341772rem  +  0.5063291139vw , 1.625rem )) {
+    h3 {
+      font-size: calc(1.25rem + 0.375 * (100vw - 20rem) / 74.0625);
+    }
+}
+
+@supports (margin-bottom: clamp( 2.5rem , 1.4873417722rem  +  5.0632911392vw , 6.25rem )) {
+    ._section-header {
+      margin-bottom: clamp( 2.5rem , 1.4873417722rem  +  5.0632911392vw , 6.25rem );
+    }
+}
+
+@supports not (margin-bottom: clamp( 2.5rem , 1.4873417722rem  +  5.0632911392vw , 6.25rem )) {
+    ._section-header {
+      margin-bottom: calc(2.5rem + 3.75 * (100vw - 20rem) / 74.0625);
+    }
+}
+
+@supports (padding-top: clamp( 0.8125rem , 0.4074367089rem  +  2.0253164557vw , 2.3125rem )) {
+    ._section-header h3 {
+      padding-top: clamp( 0.8125rem , 0.4074367089rem  +  2.0253164557vw , 2.3125rem );
+    }
+}
+
+@supports not (padding-top: clamp( 0.8125rem , 0.4074367089rem  +  2.0253164557vw , 2.3125rem )) {
+    ._section-header h3 {
+      padding-top: calc(0.8125rem + 1.5 * (100vw - 20rem) / 74.0625);
+    }
+}
+
+@supports (padding-bottom: clamp( 0.8125rem , 0.4074367089rem  +  2.0253164557vw , 2.3125rem )) {
+    ._section-header h3 {
+      padding-bottom: clamp( 0.8125rem , 0.4074367089rem  +  2.0253164557vw , 2.3125rem );
+    }
+}
+
+@supports not (padding-bottom: clamp( 0.8125rem , 0.4074367089rem  +  2.0253164557vw , 2.3125rem )) {
+    ._section-header h3 {
+      padding-bottom: calc(0.8125rem + 1.5 * (100vw - 20rem) / 74.0625);
+    }
+}
+
+@supports (height: clamp( 4.0625rem , 2.9654535865rem  +  5.4852320675vw , 8.125rem )) {
+    ._section-logo {
+      height: clamp( 4.0625rem , 2.9654535865rem  +  5.4852320675vw , 8.125rem );
+    }
+}
+
+@supports not (height: clamp( 4.0625rem , 2.9654535865rem  +  5.4852320675vw , 8.125rem )) {
+    ._section-logo {
+      height: calc(4.0625rem + 4.0625 * (100vw - 20rem) / 74.0625);
+    }
+}
+
+@supports (font-size: clamp( 1rem , 0.864978903rem  +  0.6751054852vw , 1.5rem )) {
+    ul li {
+      font-size: clamp( 1rem , 0.864978903rem  +  0.6751054852vw , 1.5rem );
+    }
+}
+
+@supports not (font-size: clamp( 1rem , 0.864978903rem  +  0.6751054852vw , 1.5rem )) {
+    ul li {
+      font-size: calc(1rem + 0.5 * (100vw - 20rem) / 74.0625);
+    }
+}
+
+@supports (padding: clamp( 0.625rem , 0.371835443rem  +  1.2658227848vw , 1.5625rem )) {
+    input,
+    textarea {
+      padding: clamp( 0.625rem , 0.371835443rem  +  1.2658227848vw , 1.5625rem );
+    }
+}
+
+@supports not (padding: clamp( 0.625rem , 0.371835443rem  +  1.2658227848vw , 1.5625rem )) {
+    input,
+    textarea {
+      padding: calc(0.625rem + 0.9375 * (100vw - 20rem) / 74.0625);
+    }
+}
+
+@supports (font-size: clamp( 1rem , 0.864978903rem  +  0.6751054852vw , 1.5rem )) {
+    input,
+    textarea {
+      font-size: clamp( 1rem , 0.864978903rem  +  0.6751054852vw , 1.5rem );
+    }
+}
+
+@supports not (font-size: clamp( 1rem , 0.864978903rem  +  0.6751054852vw , 1.5rem )) {
+    input,
+    textarea {
+      font-size: calc(1rem + 0.5 * (100vw - 20rem) / 74.0625);
+    }
+}
+
+@supports (padding-top: clamp( 0.5rem , 0.2974683544rem  +  1.0126582278vw , 1.25rem )) {
+    form button {
+      padding-top: clamp( 0.5rem , 0.2974683544rem  +  1.0126582278vw , 1.25rem );
+    }
+}
+
+@supports not (padding-top: clamp( 0.5rem , 0.2974683544rem  +  1.0126582278vw , 1.25rem )) {
+    form button {
+      padding-top: calc(0.5rem + 0.75 * (100vw - 20rem) / 74.0625);
+    }
+}
+
+@supports (padding-bottom: clamp( 0.5rem , 0.2974683544rem  +  1.0126582278vw , 1.25rem )) {
+    form button {
+      padding-bottom: clamp( 0.5rem , 0.2974683544rem  +  1.0126582278vw , 1.25rem );
+    }
+}
+
+@supports not (padding-bottom: clamp( 0.5rem , 0.2974683544rem  +  1.0126582278vw , 1.25rem )) {
+    form button {
+      padding-bottom: calc(0.5rem + 0.75 * (100vw - 20rem) / 74.0625);
+    }
+}
+
+@supports (padding-left: clamp( 0.75rem , 0.4462025316rem  +  1.5189873418vw , 1.875rem )) {
+    form button {
+      padding-left: clamp( 0.75rem , 0.4462025316rem  +  1.5189873418vw , 1.875rem );
+    }
+}
+
+@supports not (padding-left: clamp( 0.75rem , 0.4462025316rem  +  1.5189873418vw , 1.875rem )) {
+    form button {
+      padding-left: calc(0.75rem + 1.125 * (100vw - 20rem) / 74.0625);
+    }
+}
+
+@supports (padding-right: clamp( 3.125rem , 1.5553797468rem  +  7.8481012658vw , 8.9375rem )) {
+    form button {
+      padding-right: clamp( 3.125rem , 1.5553797468rem  +  7.8481012658vw , 8.9375rem );
+    }
+}
+
+@supports not (padding-right: clamp( 3.125rem , 1.5553797468rem  +  7.8481012658vw , 8.9375rem )) {
+    form button {
+      padding-right: calc(3.125rem + 5.8125 * (100vw - 20rem) / 74.0625);
+    }
+}
+
+@supports (font-size: clamp( 1.125rem , 1.0237341772rem  +  0.5063291139vw , 1.5rem )) {
+    form button {
+      font-size: clamp( 1.125rem , 1.0237341772rem  +  0.5063291139vw , 1.5rem );
+    }
+}
+
+@supports not (font-size: clamp( 1.125rem , 1.0237341772rem  +  0.5063291139vw , 1.5rem )) {
+    form button {
+      font-size: calc(1.125rem + 0.375 * (100vw - 20rem) / 74.0625);
+    }
+}
+
+@supports (gap: clamp( 1.875rem , 0.3560126582rem  +  7.5949367089vw , 7.5rem )) {
+    .menu__list {
+      gap: clamp( 1.875rem , 0.3560126582rem  +  7.5949367089vw , 7.5rem );
+    }
+}
+
+@supports not (gap: clamp( 1.875rem , 0.3560126582rem  +  7.5949367089vw , 7.5rem )) {
+    .menu__list {
+      gap: calc(1.875rem + 5.625 * (100vw - 20rem) / 74.0625);
+    }
+}
+
+@supports (font-size: clamp( 1.875rem , 1.621835443rem  +  1.2658227848vw , 2.8125rem )) {
+    .intro__slogan {
+      font-size: clamp( 1.875rem , 1.621835443rem  +  1.2658227848vw , 2.8125rem );
+    }
+}
+
+@supports not (font-size: clamp( 1.875rem , 1.621835443rem  +  1.2658227848vw , 2.8125rem )) {
+    .intro__slogan {
+      font-size: calc(1.875rem + 0.9375 * (100vw - 20rem) / 74.0625);
+    }
+}
+
+@supports (font-size: clamp( 1.125rem , 0.989978903rem  +  0.6751054852vw , 1.625rem )) {
+    .intro__text {
+      font-size: clamp( 1.125rem , 0.989978903rem  +  0.6751054852vw , 1.625rem );
+    }
+}
+
+@supports not (font-size: clamp( 1.125rem , 0.989978903rem  +  0.6751054852vw , 1.625rem )) {
+    .intro__text {
+      font-size: calc(1.125rem + 0.5 * (100vw - 20rem) / 74.0625);
+    }
+}
+
+@supports (margin-bottom: clamp( 1.875rem , 1.3686708861rem  +  2.5316455696vw , 3.75rem )) {
+    .services__item {
+      margin-bottom: clamp( 1.875rem , 1.3686708861rem  +  2.5316455696vw , 3.75rem );
+    }
+}
+
+@supports not (margin-bottom: clamp( 1.875rem , 1.3686708861rem  +  2.5316455696vw , 3.75rem )) {
+    .services__item {
+      margin-bottom: calc(1.875rem + 1.875 * (100vw - 20rem) / 74.0625);
+    }
+}
+
+@supports (font-size: clamp( 1.125rem , 0.9562236287rem  +  0.8438818565vw , 1.75rem )) {
+    .services__item p {
+      font-size: clamp( 1.125rem , 0.9562236287rem  +  0.8438818565vw , 1.75rem );
+    }
+}
+
+@supports not (font-size: clamp( 1.125rem , 0.9562236287rem  +  0.8438818565vw , 1.75rem )) {
+    .services__item p {
+      font-size: calc(1.125rem + 0.625 * (100vw - 20rem) / 74.0625);
+    }
+}
+
+@supports (font-size: clamp( 1rem , 0.864978903rem  +  0.6751054852vw , 1.5rem )) {
+    .services__show-more {
+      font-size: clamp( 1rem , 0.864978903rem  +  0.6751054852vw , 1.5rem );
+    }
+}
+
+@supports not (font-size: clamp( 1rem , 0.864978903rem  +  0.6751054852vw , 1.5rem )) {
+    .services__show-more {
+      font-size: calc(1rem + 0.5 * (100vw - 20rem) / 74.0625);
+    }
+}
+}
+
 @media (min-width: 48em) and (max-width: 90em) {
-@supports (font-size: clamp( 2rem , -0.2857142857rem  +  4.7619047619vw , 4rem )) {
-    h2 {
-      font-size: clamp( 2rem , -0.2857142857rem  +  4.7619047619vw , 4rem );
-    }
-}
-
-@supports not (font-size: clamp( 2rem , -0.2857142857rem  +  4.7619047619vw , 4rem )) {
-    h2 {
-      font-size: calc(2rem + 2 * (100vw - 48rem) / 42);
-    }
-}
-
-@supports (margin-bottom: clamp( 1.875rem , -0.2678571429rem  +  4.4642857143vw , 3.75rem )) {
-    h2 {
-      margin-bottom: clamp( 1.875rem , -0.2678571429rem  +  4.4642857143vw , 3.75rem );
-    }
-}
-
-@supports not (margin-bottom: clamp( 1.875rem , -0.2678571429rem  +  4.4642857143vw , 3.75rem )) {
-    h2 {
-      margin-bottom: calc(1.875rem + 1.875 * (100vw - 48rem) / 42);
-    }
-}
-
-@supports (font-size: clamp( 1.5rem , -1.3571428571rem  +  5.9523809524vw , 4rem )) {
-    h2 span {
-      font-size: clamp( 1.5rem , -1.3571428571rem  +  5.9523809524vw , 4rem );
-    }
-}
-
-@supports not (font-size: clamp( 1.5rem , -1.3571428571rem  +  5.9523809524vw , 4rem )) {
-    h2 span {
-      font-size: calc(1.5rem + 2.5 * (100vw - 48rem) / 42);
-    }
-}
-
-@supports (font-size: clamp( 1.625rem , 0.625rem  +  2.0833333333vw , 2.5rem )) {
-    h3 {
-      font-size: clamp( 1.625rem , 0.625rem  +  2.0833333333vw , 2.5rem );
-    }
-}
-
-@supports not (font-size: clamp( 1.625rem , 0.625rem  +  2.0833333333vw , 2.5rem )) {
-    h3 {
-      font-size: calc(1.625rem + 0.875 * (100vw - 48rem) / 42);
-    }
-}
-
-@supports (font-size: clamp( 1.5rem , -0.2142857143rem  +  3.5714285714vw , 3rem )) {
-    ul li {
-      font-size: clamp( 1.5rem , -0.2142857143rem  +  3.5714285714vw , 3rem );
-    }
-}
-
-@supports not (font-size: clamp( 1.5rem , -0.2142857143rem  +  3.5714285714vw , 3rem )) {
-    ul li {
-      font-size: calc(1.5rem + 1.5 * (100vw - 48rem) / 42);
-    }
-}
-
-@supports (padding: clamp( 0.75rem , -0.1785714286rem  +  1.9345238095vw , 1.5625rem )) {
-    input,
-    textarea {
-      padding: clamp( 0.75rem , -0.1785714286rem  +  1.9345238095vw , 1.5625rem );
-    }
-}
-
-@supports not (padding: clamp( 0.75rem , -0.1785714286rem  +  1.9345238095vw , 1.5625rem )) {
-    input,
-    textarea {
-      padding: calc(0.75rem + 0.8125 * (100vw - 48rem) / 42);
-    }
-}
-
-@supports (font-size: clamp( 1.25rem , 0.1071428571rem  +  2.380952381vw , 2.25rem )) {
-    input,
-    textarea {
-      font-size: clamp( 1.25rem , 0.1071428571rem  +  2.380952381vw , 2.25rem );
-    }
-}
-
-@supports not (font-size: clamp( 1.25rem , 0.1071428571rem  +  2.380952381vw , 2.25rem )) {
-    input,
-    textarea {
-      font-size: calc(1.25rem + 1 * (100vw - 48rem) / 42);
-    }
-}
-
-@supports (padding-top: clamp( 0.625rem , -0.0892857143rem  +  1.4880952381vw , 1.25rem )) {
-    form button {
-      padding-top: clamp( 0.625rem , -0.0892857143rem  +  1.4880952381vw , 1.25rem );
-    }
-}
-
-@supports not (padding-top: clamp( 0.625rem , -0.0892857143rem  +  1.4880952381vw , 1.25rem )) {
-    form button {
-      padding-top: calc(0.625rem + 0.625 * (100vw - 48rem) / 42);
-    }
-}
-
-@supports (padding-bottom: clamp( 0.625rem , -0.0892857143rem  +  1.4880952381vw , 1.25rem )) {
-    form button {
-      padding-bottom: clamp( 0.625rem , -0.0892857143rem  +  1.4880952381vw , 1.25rem );
-    }
-}
-
-@supports not (padding-bottom: clamp( 0.625rem , -0.0892857143rem  +  1.4880952381vw , 1.25rem )) {
-    form button {
-      padding-bottom: calc(0.625rem + 0.625 * (100vw - 48rem) / 42);
-    }
-}
-
-@supports (padding-left: clamp( 0.9375rem , -0.1339285714rem  +  2.2321428571vw , 1.875rem )) {
-    form button {
-      padding-left: clamp( 0.9375rem , -0.1339285714rem  +  2.2321428571vw , 1.875rem );
-    }
-}
-
-@supports not (padding-left: clamp( 0.9375rem , -0.1339285714rem  +  2.2321428571vw , 1.875rem )) {
-    form button {
-      padding-left: calc(0.9375rem + 0.9375 * (100vw - 48rem) / 42);
-    }
-}
-
-@supports (padding-right: clamp( 4.375rem , -0.8392857143rem  +  10.8630952381vw , 8.9375rem )) {
-    form button {
-      padding-right: clamp( 4.375rem , -0.8392857143rem  +  10.8630952381vw , 8.9375rem );
-    }
-}
-
-@supports not (padding-right: clamp( 4.375rem , -0.8392857143rem  +  10.8630952381vw , 8.9375rem )) {
-    form button {
-      padding-right: calc(4.375rem + 4.5625 * (100vw - 48rem) / 42);
-    }
-}
-
 @supports (padding-top: clamp( 2.875rem , -3.2678571429rem  +  12.7976190476vw , 8.25rem )) {
     .footer {
       padding-top: clamp( 2.875rem , -3.2678571429rem  +  12.7976190476vw , 8.25rem );
@@ -1308,42 +1454,6 @@ form button {
     }
 }
 
-@supports (font-size: clamp( 1.75rem , 1.25rem  +  1.0416666667vw , 2.1875rem )) {
-    .intro__text {
-      font-size: clamp( 1.75rem , 1.25rem  +  1.0416666667vw , 2.1875rem );
-    }
-}
-
-@supports not (font-size: clamp( 1.75rem , 1.25rem  +  1.0416666667vw , 2.1875rem )) {
-    .intro__text {
-      font-size: calc(1.75rem + 0.4375 * (100vw - 48rem) / 42);
-    }
-}
-
-@supports (font-size: clamp( 1.75rem , 0.3214285714rem  +  2.9761904762vw , 3rem )) {
-    .services__item p {
-      font-size: clamp( 1.75rem , 0.3214285714rem  +  2.9761904762vw , 3rem );
-    }
-}
-
-@supports not (font-size: clamp( 1.75rem , 0.3214285714rem  +  2.9761904762vw , 3rem )) {
-    .services__item p {
-      font-size: calc(1.75rem + 1.25 * (100vw - 48rem) / 42);
-    }
-}
-
-@supports (top: clamp( -3.125rem , -7.4107142857rem  +  8.9285714286vw , 0.625rem )) {
-    .services__item .services__decor {
-      top: clamp( -3.125rem , -7.4107142857rem  +  8.9285714286vw , 0.625rem );
-    }
-}
-
-@supports not (top: clamp( -3.125rem , -7.4107142857rem  +  8.9285714286vw , 0.625rem )) {
-    .services__item .services__decor {
-      top: calc(-3.125rem + 3.75 * (100vw - 48rem) / 42);
-    }
-}
-
 @supports (right: clamp( 1.375rem , 0.7321428571rem  +  1.3392857143vw , 1.9375rem )) {
     .services__item .services__decor {
       right: clamp( 1.375rem , 0.7321428571rem  +  1.3392857143vw , 1.9375rem );
@@ -1368,15 +1478,15 @@ form button {
     }
 }
 
-@supports (top: clamp( 1.875rem , -5.9821428571rem  +  16.369047619vw , 8.75rem )) {
+@supports (top: clamp( 1.875rem , 0.4464285714rem  +  2.9761904762vw , 3.125rem )) {
     .services__item .services__decor-big {
-      top: clamp( 1.875rem , -5.9821428571rem  +  16.369047619vw , 8.75rem );
+      top: clamp( 1.875rem , 0.4464285714rem  +  2.9761904762vw , 3.125rem );
     }
 }
 
-@supports not (top: clamp( 1.875rem , -5.9821428571rem  +  16.369047619vw , 8.75rem )) {
+@supports not (top: clamp( 1.875rem , 0.4464285714rem  +  2.9761904762vw , 3.125rem )) {
     .services__item .services__decor-big {
-      top: calc(1.875rem + 6.875 * (100vw - 48rem) / 42);
+      top: calc(1.875rem + 1.25 * (100vw - 48rem) / 42);
     }
 }
 
@@ -1404,15 +1514,15 @@ form button {
     }
 }
 
-@supports (top: clamp( 3.5625rem , -10.4375rem  +  29.1666666667vw , 15.8125rem )) {
+@supports (top: clamp( 3.5625rem , 0.4910714286rem  +  6.3988095238vw , 6.25rem )) {
     .services__item.active .services__decor {
-      top: clamp( 3.5625rem , -10.4375rem  +  29.1666666667vw , 15.8125rem );
+      top: clamp( 3.5625rem , 0.4910714286rem  +  6.3988095238vw , 6.25rem );
     }
 }
 
-@supports not (top: clamp( 3.5625rem , -10.4375rem  +  29.1666666667vw , 15.8125rem )) {
+@supports not (top: clamp( 3.5625rem , 0.4910714286rem  +  6.3988095238vw , 6.25rem )) {
     .services__item.active .services__decor {
-      top: calc(3.5625rem + 12.25 * (100vw - 48rem) / 42);
+      top: calc(3.5625rem + 2.6875 * (100vw - 48rem) / 42);
     }
 }
 
@@ -1428,15 +1538,15 @@ form button {
     }
 }
 
-@supports (top: clamp( 9.9375rem , -6.9910714286rem  +  35.2678571429vw , 24.75rem )) {
+@supports (top: clamp( 9.9375rem , 7.0089285714rem  +  6.1011904762vw , 12.5rem )) {
     .services__item.active .services__decor-big {
-      top: clamp( 9.9375rem , -6.9910714286rem  +  35.2678571429vw , 24.75rem );
+      top: clamp( 9.9375rem , 7.0089285714rem  +  6.1011904762vw , 12.5rem );
     }
 }
 
-@supports not (top: clamp( 9.9375rem , -6.9910714286rem  +  35.2678571429vw , 24.75rem )) {
+@supports not (top: clamp( 9.9375rem , 7.0089285714rem  +  6.1011904762vw , 12.5rem )) {
     .services__item.active .services__decor-big {
-      top: calc(9.9375rem + 14.8125 * (100vw - 48rem) / 42);
+      top: calc(9.9375rem + 2.5625 * (100vw - 48rem) / 42);
     }
 }
 
@@ -1451,67 +1561,9 @@ form button {
       right: calc(1.1875rem + 10 * (100vw - 48rem) / 42);
     }
 }
-
-@supports (font-size: clamp( 1.5rem , -0.2142857143rem  +  3.5714285714vw , 3rem )) {
-    .services__show-more {
-      font-size: clamp( 1.5rem , -0.2142857143rem  +  3.5714285714vw , 3rem );
-    }
-}
-
-@supports not (font-size: clamp( 1.5rem , -0.2142857143rem  +  3.5714285714vw , 3rem )) {
-    .services__show-more {
-      font-size: calc(1.5rem + 1.5 * (100vw - 48rem) / 42);
-    }
-}
 }
 
 @media (max-width: 47.99875em) and (min-width: 94.0625em) {
-  h2 {
-    font-size: 2rem;
-  }
-
-  h2 span {
-    font-size: 1.625rem;
-  }
-
-  h3 {
-    font-size: 1.625rem;
-  }
-
-  ul li {
-    font-size: 1.5rem;
-  }
-
-  input,
-  textarea {
-    padding: 0.75rem;
-  }
-
-  input,
-  textarea {
-    font-size: 1.25rem;
-  }
-
-  form button {
-    padding-top: 0.625rem;
-  }
-
-  form button {
-    padding-bottom: 0.625rem;
-  }
-
-  form button {
-    padding-left: 0.9375rem;
-  }
-
-  form button {
-    padding-right: 4.375rem;
-  }
-
-  form button {
-    font-size: 1.5rem;
-  }
-
   .footer {
     padding-top: 2.875rem;
   }
@@ -1548,14 +1600,6 @@ form button {
     margin-bottom: 1.875rem;
   }
 
-  .intro__text {
-    font-size: 1.625rem;
-  }
-
-  .services__item p {
-    font-size: 1.75rem;
-  }
-
   .services__item .services__decor {
     top: -3.125rem;
   }
@@ -1589,155 +1633,15 @@ form button {
   }
 
   .services__item.active .services__decor-big {
-    top: 11.8125rem;
+    top: 9.375rem;
   }
 
   .services__item.active .services__decor-big {
     right: 1.1875rem;
   }
-
-  .services__show-more {
-    font-size: 1.5rem;
-  }
 }
 
 @media (max-width: 47.99875em) and (min-width: 20em) and (max-width: 94.0625em) {
-@supports (font-size: clamp( 1.5rem , 1.364978903rem  +  0.6751054852vw , 2rem )) {
-    h2 {
-      font-size: clamp( 1.5rem , 1.364978903rem  +  0.6751054852vw , 2rem );
-    }
-}
-
-@supports not (font-size: clamp( 1.5rem , 1.364978903rem  +  0.6751054852vw , 2rem )) {
-    h2 {
-      font-size: calc(1.5rem + 0.5 * (100vw - 20rem) / 74.0625);
-    }
-}
-
-@supports (font-size: clamp( 1rem , 0.8312236287rem  +  0.8438818565vw , 1.625rem )) {
-    h2 span {
-      font-size: clamp( 1rem , 0.8312236287rem  +  0.8438818565vw , 1.625rem );
-    }
-}
-
-@supports not (font-size: clamp( 1rem , 0.8312236287rem  +  0.8438818565vw , 1.625rem )) {
-    h2 span {
-      font-size: calc(1rem + 0.625 * (100vw - 20rem) / 74.0625);
-    }
-}
-
-@supports (font-size: clamp( 1.25rem , 1.1487341772rem  +  0.5063291139vw , 1.625rem )) {
-    h3 {
-      font-size: clamp( 1.25rem , 1.1487341772rem  +  0.5063291139vw , 1.625rem );
-    }
-}
-
-@supports not (font-size: clamp( 1.25rem , 1.1487341772rem  +  0.5063291139vw , 1.625rem )) {
-    h3 {
-      font-size: calc(1.25rem + 0.375 * (100vw - 20rem) / 74.0625);
-    }
-}
-
-@supports (font-size: clamp( 1rem , 0.864978903rem  +  0.6751054852vw , 1.5rem )) {
-    ul li {
-      font-size: clamp( 1rem , 0.864978903rem  +  0.6751054852vw , 1.5rem );
-    }
-}
-
-@supports not (font-size: clamp( 1rem , 0.864978903rem  +  0.6751054852vw , 1.5rem )) {
-    ul li {
-      font-size: calc(1rem + 0.5 * (100vw - 20rem) / 74.0625);
-    }
-}
-
-@supports (padding: clamp( 0.625rem , 0.5912447257rem  +  0.1687763713vw , 0.75rem )) {
-    input,
-    textarea {
-      padding: clamp( 0.625rem , 0.5912447257rem  +  0.1687763713vw , 0.75rem );
-    }
-}
-
-@supports not (padding: clamp( 0.625rem , 0.5912447257rem  +  0.1687763713vw , 0.75rem )) {
-    input,
-    textarea {
-      padding: calc(0.625rem + 0.125 * (100vw - 20rem) / 74.0625);
-    }
-}
-
-@supports (font-size: clamp( 1rem , 0.9324894515rem  +  0.3375527426vw , 1.25rem )) {
-    input,
-    textarea {
-      font-size: clamp( 1rem , 0.9324894515rem  +  0.3375527426vw , 1.25rem );
-    }
-}
-
-@supports not (font-size: clamp( 1rem , 0.9324894515rem  +  0.3375527426vw , 1.25rem )) {
-    input,
-    textarea {
-      font-size: calc(1rem + 0.25 * (100vw - 20rem) / 74.0625);
-    }
-}
-
-@supports (padding-top: clamp( 0.5rem , 0.4662447257rem  +  0.1687763713vw , 0.625rem )) {
-    form button {
-      padding-top: clamp( 0.5rem , 0.4662447257rem  +  0.1687763713vw , 0.625rem );
-    }
-}
-
-@supports not (padding-top: clamp( 0.5rem , 0.4662447257rem  +  0.1687763713vw , 0.625rem )) {
-    form button {
-      padding-top: calc(0.5rem + 0.125 * (100vw - 20rem) / 74.0625);
-    }
-}
-
-@supports (padding-bottom: clamp( 0.5rem , 0.4662447257rem  +  0.1687763713vw , 0.625rem )) {
-    form button {
-      padding-bottom: clamp( 0.5rem , 0.4662447257rem  +  0.1687763713vw , 0.625rem );
-    }
-}
-
-@supports not (padding-bottom: clamp( 0.5rem , 0.4662447257rem  +  0.1687763713vw , 0.625rem )) {
-    form button {
-      padding-bottom: calc(0.5rem + 0.125 * (100vw - 20rem) / 74.0625);
-    }
-}
-
-@supports (padding-left: clamp( 0.75rem , 0.6993670886rem  +  0.253164557vw , 0.9375rem )) {
-    form button {
-      padding-left: clamp( 0.75rem , 0.6993670886rem  +  0.253164557vw , 0.9375rem );
-    }
-}
-
-@supports not (padding-left: clamp( 0.75rem , 0.6993670886rem  +  0.253164557vw , 0.9375rem )) {
-    form button {
-      padding-left: calc(0.75rem + 0.1875 * (100vw - 20rem) / 74.0625);
-    }
-}
-
-@supports (padding-right: clamp( 3.125rem , 2.7874472574rem  +  1.6877637131vw , 4.375rem )) {
-    form button {
-      padding-right: clamp( 3.125rem , 2.7874472574rem  +  1.6877637131vw , 4.375rem );
-    }
-}
-
-@supports not (padding-right: clamp( 3.125rem , 2.7874472574rem  +  1.6877637131vw , 4.375rem )) {
-    form button {
-      padding-right: calc(3.125rem + 1.25 * (100vw - 20rem) / 74.0625);
-    }
-}
-
-@supports (font-size: clamp( 1.125rem , 1.0237341772rem  +  0.5063291139vw , 1.5rem )) {
-    form button {
-      font-size: clamp( 1.125rem , 1.0237341772rem  +  0.5063291139vw , 1.5rem );
-    }
-}
-
-@supports not (font-size: clamp( 1.125rem , 1.0237341772rem  +  0.5063291139vw , 1.5rem )) {
-    form button {
-      font-size: calc(1.125rem + 0.375 * (100vw - 20rem) / 74.0625);
-    }
-}
-
 @supports (padding-top: clamp( 1.5625rem , 1.2080696203rem  +  1.7721518987vw , 2.875rem )) {
     .footer {
       padding-top: clamp( 1.5625rem , 1.2080696203rem  +  1.7721518987vw , 2.875rem );
@@ -1846,30 +1750,6 @@ form button {
     }
 }
 
-@supports (font-size: clamp( 1.125rem , 0.989978903rem  +  0.6751054852vw , 1.625rem )) {
-    .intro__text {
-      font-size: clamp( 1.125rem , 0.989978903rem  +  0.6751054852vw , 1.625rem );
-    }
-}
-
-@supports not (font-size: clamp( 1.125rem , 0.989978903rem  +  0.6751054852vw , 1.625rem )) {
-    .intro__text {
-      font-size: calc(1.125rem + 0.5 * (100vw - 20rem) / 74.0625);
-    }
-}
-
-@supports (font-size: clamp( 1.125rem , 0.9562236287rem  +  0.8438818565vw , 1.75rem )) {
-    .services__item p {
-      font-size: clamp( 1.125rem , 0.9562236287rem  +  0.8438818565vw , 1.75rem );
-    }
-}
-
-@supports not (font-size: clamp( 1.125rem , 0.9562236287rem  +  0.8438818565vw , 1.75rem )) {
-    .services__item p {
-      font-size: calc(1.125rem + 0.625 * (100vw - 20rem) / 74.0625);
-    }
-}
-
 @supports (top: clamp( -3.125rem , -1.5374472574rem  +  -1.6877637131vw , -1.875rem )) {
     .services__item .services__decor {
       top: clamp( -3.125rem , -1.5374472574rem  +  -1.6877637131vw , -1.875rem );
@@ -1966,15 +1846,15 @@ form button {
     }
 }
 
-@supports (top: clamp( 6.25rem , 4.7478902954rem  +  7.5105485232vw , 11.8125rem )) {
+@supports (top: clamp( 6.25rem , 5.4061181435rem  +  4.2194092827vw , 9.375rem )) {
     .services__item.active .services__decor-big {
-      top: clamp( 6.25rem , 4.7478902954rem  +  7.5105485232vw , 11.8125rem );
+      top: clamp( 6.25rem , 5.4061181435rem  +  4.2194092827vw , 9.375rem );
     }
 }
 
-@supports not (top: clamp( 6.25rem , 4.7478902954rem  +  7.5105485232vw , 11.8125rem )) {
+@supports not (top: clamp( 6.25rem , 5.4061181435rem  +  4.2194092827vw , 9.375rem )) {
     .services__item.active .services__decor-big {
-      top: calc(6.25rem + 5.5625 * (100vw - 20rem) / 74.0625);
+      top: calc(6.25rem + 3.125 * (100vw - 20rem) / 74.0625);
     }
 }
 
@@ -1989,118 +1869,18 @@ form button {
       right: calc(-0.75rem + 1.9375 * (100vw - 20rem) / 74.0625);
     }
 }
-
-@supports (font-size: clamp( 1rem , 0.864978903rem  +  0.6751054852vw , 1.5rem )) {
-    .services__show-more {
-      font-size: clamp( 1rem , 0.864978903rem  +  0.6751054852vw , 1.5rem );
-    }
 }
 
-@supports not (font-size: clamp( 1rem , 0.864978903rem  +  0.6751054852vw , 1.5rem )) {
-    .services__show-more {
-      font-size: calc(1rem + 0.5 * (100vw - 20rem) / 74.0625);
-    }
-}
-}
-
-@media (min-width: 20em) and (max-width: 94.0625em) {
-@supports (margin-bottom: clamp( 2.5rem , 1.3185654008rem  +  5.9071729958vw , 6.875rem )) {
-    ._section-header {
-      margin-bottom: clamp( 2.5rem , 1.3185654008rem  +  5.9071729958vw , 6.875rem );
-    }
-}
-
-@supports not (margin-bottom: clamp( 2.5rem , 1.3185654008rem  +  5.9071729958vw , 6.875rem )) {
-    ._section-header {
-      margin-bottom: calc(2.5rem + 4.375 * (100vw - 20rem) / 74.0625);
-    }
-}
-
-@supports (padding-top: clamp( 0.8125rem , 0.4074367089rem  +  2.0253164557vw , 2.3125rem )) {
-    ._section-header h3 {
-      padding-top: clamp( 0.8125rem , 0.4074367089rem  +  2.0253164557vw , 2.3125rem );
-    }
-}
-
-@supports not (padding-top: clamp( 0.8125rem , 0.4074367089rem  +  2.0253164557vw , 2.3125rem )) {
-    ._section-header h3 {
-      padding-top: calc(0.8125rem + 1.5 * (100vw - 20rem) / 74.0625);
-    }
-}
-
-@supports (padding-bottom: clamp( 0.8125rem , 0.4074367089rem  +  2.0253164557vw , 2.3125rem )) {
-    ._section-header h3 {
-      padding-bottom: clamp( 0.8125rem , 0.4074367089rem  +  2.0253164557vw , 2.3125rem );
-    }
-}
-
-@supports not (padding-bottom: clamp( 0.8125rem , 0.4074367089rem  +  2.0253164557vw , 2.3125rem )) {
-    ._section-header h3 {
-      padding-bottom: calc(0.8125rem + 1.5 * (100vw - 20rem) / 74.0625);
-    }
-}
-
-@supports (height: clamp( 4.0625rem , 2.6279008439rem  +  7.1729957806vw , 9.375rem )) {
-    ._section-logo {
-      height: clamp( 4.0625rem , 2.6279008439rem  +  7.1729957806vw , 9.375rem );
-    }
-}
-
-@supports not (height: clamp( 4.0625rem , 2.6279008439rem  +  7.1729957806vw , 9.375rem )) {
-    ._section-logo {
-      height: calc(4.0625rem + 5.3125 * (100vw - 20rem) / 74.0625);
-    }
-}
-
-@supports (gap: clamp( 1.875rem , 0.3560126582rem  +  7.5949367089vw , 7.5rem )) {
-    .menu__list {
-      gap: clamp( 1.875rem , 0.3560126582rem  +  7.5949367089vw , 7.5rem );
-    }
-}
-
-@supports not (gap: clamp( 1.875rem , 0.3560126582rem  +  7.5949367089vw , 7.5rem )) {
-    .menu__list {
-      gap: calc(1.875rem + 5.625 * (100vw - 20rem) / 74.0625);
-    }
-}
-
-@supports (margin-bottom: clamp( 2.5rem , 1.4873417722rem  +  5.0632911392vw , 6.25rem )) {
-    .services__item {
-      margin-bottom: clamp( 2.5rem , 1.4873417722rem  +  5.0632911392vw , 6.25rem );
-    }
-}
-
-@supports not (margin-bottom: clamp( 2.5rem , 1.4873417722rem  +  5.0632911392vw , 6.25rem )) {
-    .services__item {
-      margin-bottom: calc(2.5rem + 3.75 * (100vw - 20rem) / 74.0625);
-    }
-}
-}
-
-@media (min-width: 48em) and (max-width: 90.5625em) {
-@supports (font-size: clamp( 1.5rem , 0.654185022rem  +  1.7621145374vw , 2.25rem )) {
-    form button {
-      font-size: clamp( 1.5rem , 0.654185022rem  +  1.7621145374vw , 2.25rem );
-    }
-}
-
-@supports not (font-size: clamp( 1.5rem , 0.654185022rem  +  1.7621145374vw , 2.25rem )) {
-    form button {
-      font-size: calc(1.5rem + 0.75 * (100vw - 48rem) / 42.5625);
-    }
-}
-}
-
-@media (max-width: 47.99875em) and (min-width: 20em) and (max-width: 48em) {
-@supports (font-size: clamp( 6.875rem , 0.625rem  +  31.25vw , 15.625rem )) {
+@media (max-width: 78.125em) and (min-width: 20em) and (max-width: 78.125em) {
+@supports (font-size: clamp( 6.875rem , 4.939516129rem  +  9.6774193548vw , 12.5rem )) {
     .intro__left h1 {
-      font-size: clamp( 6.875rem , 0.625rem  +  31.25vw , 15.625rem );
+      font-size: clamp( 6.875rem , 4.939516129rem  +  9.6774193548vw , 12.5rem );
     }
 }
 
-@supports not (font-size: clamp( 6.875rem , 0.625rem  +  31.25vw , 15.625rem )) {
+@supports not (font-size: clamp( 6.875rem , 4.939516129rem  +  9.6774193548vw , 12.5rem )) {
     .intro__left h1 {
-      font-size: calc(6.875rem + 8.75 * (100vw - 20rem) / 28);
+      font-size: calc(6.875rem + 5.625 * (100vw - 20rem) / 58.125);
     }
 }
 }
