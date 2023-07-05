@@ -3147,7 +3147,7 @@
             spaceBetween: 15,
             autoHeight: true,
             speed: 800,
-            preloadImages: false,
+            preloadImages: true,
             lazy: true,
             on: {}
         });
