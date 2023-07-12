@@ -17,7 +17,7 @@
 	$mail->SMTPAuth   = true;                          //Enable SMTP authentication
 	$mail->Username   = 'goncharovilya38@gmail.com';   //SMTP username
 	$mail->Password   = 'bkuhyonscwilsglg';            //SMTP password
-	$mail->SMTPSecure = 'TLS';                         //Enable implicit TLS encryption
+	$mail->SMTPSecure = 'ssl';                         //Enable implicit TLS encryption
 	$mail->Port       = 587;                 
 
 	//От кого письмо
