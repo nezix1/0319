@@ -2016,10 +2016,10 @@ form button {
   height: 240px
 }
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   .gallery {
-    margin: 50px auto;
-  }
+      margin: 50px auto;
+    }
   .h100 {
     height: 40px
   }
@@ -2038,5 +2038,33 @@ form button {
 
   .h240 {
     height: 110px
+  }
+}
+@media (max-width: 480px) {
+  .gallery .swiper-slide .slide-box,
+  .gallery .swiper-slide {
+    gap: 5px;
+  }
+  .gallery {
+      margin: 40px auto;
+    }
+  .h100 {
+    height: 30px
+  }
+
+  .h120 {
+    height: 40px
+  }
+
+  .h160 {
+    height: 60px
+  }
+
+  .h200 {
+    height: 80px
+  }
+
+  .h240 {
+    height: 100px
   }
 }

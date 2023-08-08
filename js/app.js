@@ -3157,13 +3157,17 @@
             observer: true,
             observeParents: true,
             slidesPerView: 2,
-            spaceBetween: 15,
+            spaceBetween: 5,
             autoHeight: true,
             speed: 800,
             preloadImages: true,
             lazy: true,
             on: {},
-
+            breakpoints: {
+                480: {
+                    spaceBetween: 10,
+                },
+            }
         });
     }
     window.addEventListener("load", (function (e) {
